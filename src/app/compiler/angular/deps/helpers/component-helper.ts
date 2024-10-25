@@ -166,7 +166,6 @@ export class ComponentHelper {
             const res = regexp.exec(prop.defaultValue);
             if (res) {
                 const newOutput = prop;
-                newOutput.defaultValue = null;
                 newOutput.required = false;
                 outputSignals.push(newOutput);
             }
